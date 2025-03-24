@@ -50,7 +50,7 @@ Figure 2 (Misclassification Distribution) plots the number of misclassifications
 Both RoBERTa-Large and BERT-Base show relatively fewer misclassifications overall, with GPT-3.5 Turbo struggling significantly on the Anxiety category. XLM-RoBERTa exhibits heightened sensitivity, particularly overreacting to small perturbations in text.
 
 ### 3.3 Interpretability with SHAP and LIME
-![image](https://github.com/user-attachments/assets/9b174f39-f040-4b8e-9e7e-ee0b88bfd344)
+![image](https://github.com/user-attachments/assets/c2ec772b-9ef0-4541-b5b8-f74feeef6e6c)
 Figure 3 (SHAP Summary Plot) displays feature-level explanations for a simulated model output, highlighting the positive or negative impact of each feature on the prediction. Features with higher SHAP values have a stronger influence on the model’s output. The distribution suggests that certain features (e.g., Feature 7 or Feature 8) may consistently steer the model toward specific classes.
 
 In parallel, a LIME explanation (see console output) for a sample text indicates which tokens most affect local classification decisions. For instance, words like “text” and “adversarial” have small positive contributions, whereas “is” and “attack” exhibit slightly negative weights. These insights help us identify tokens or linguistic structures that may be more vulnerable to adversarial manipulation.
